@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>学習アプリ</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sawarabi+Gothic&display=swap">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>学習アプリ</h1>
+        <!-- <button id="saveButton" onclick="saveQuiz()">クイズを保存</button>-->
+    </header>
+
+    <div id="quizContainer">
+        <h2>クイズの作成</h2>
+        <label for="questionInput">質問:</label>
+        <input type="text" id="questionInput" placeholder="質問を入力してください">
+
+        <label for="answerInput">答え:</label>
+        <input type="text" id="answerInput" placeholder="答えを入力してください">
+
+        <button onclick="addQuestion()">クイズを追加</button>
+    </div>
+
+    <div id="quizList">
+        <h2>クイズ一覧</h2>
+        <ul id="quizItems"></ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

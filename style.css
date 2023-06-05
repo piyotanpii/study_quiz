@@ -1,0 +1,131 @@
+body {
+    font-family: 'Noto Sans JP', sans-serif;
+    background-color: #F0F8FF;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: linear-gradient(to bottom, #96f3fb, #87b7fa);
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    color: #333333;
+    font-family: 'Sawarabi Gothic', sans-serif;
+    font-size: 32px;
+}
+
+h2 {
+    font-family: 'Sawarabi Gothic', sans-serif;
+    font-size: 24px;
+}
+
+#quizContainer {
+    background-color: #ffffff;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#quizContainer h2 {
+    color: #333333;
+    margin-bottom: 10px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333333;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #6495ED;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-family: 'Sawarabi Gothic', sans-serif;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #4169E1;
+}
+
+#quizList {
+    margin: 20px;
+}
+
+#quizItems {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.quizItem {
+    background-color: #ffffff;
+    padding: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.quizItem:hover {
+    background-color: #f0f0f0;
+}
+
+.deleteButton {
+    background-color: #6495ED;
+    color: #ffffff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.deleteButton:hover {
+    background-color: #4169E1;
+}
+
+.listItemContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/* レスポンシブ対応 */
+
+@media screen and (max-width: 600px) {
+    body {
+        font-size: 14px;
+    }
+    header h1 {
+        font-size: 24px;
+    }
+    #quizContainer {
+        margin: 10px;
+    }
+    button {
+        padding: 8px 16px;
+    }
+    .deleteButton {
+        padding: 3px 8px;
+    }
+}
